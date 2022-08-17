@@ -7,12 +7,12 @@ public class UpCase {
         Scanner in = new Scanner(System.in);
         System.out.print("Input a Sentence: ");
         String line = in.nextLine();
-        String upper_case_line = "";
+        StringBuilder upper_case_line = new StringBuilder();
         Scanner lineScan = new Scanner(line);
         while(lineScan.hasNext()) {
             String word = lineScan.next();
-            upper_case_line += Character.toUpperCase(word.charAt(0)) + word.substring(1) + " ";
+            upper_case_line.append(Character.toUpperCase(word.charAt(0))).append(word.substring(1)).append(" ");
         }
-        System.out.println(upper_case_line.trim());
+        System.out.println(upper_case_line.toString().trim());
     }
 }

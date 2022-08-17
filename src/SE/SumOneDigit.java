@@ -13,7 +13,7 @@ public class SumOneDigit {
             int n = in.nextInt();
             if (n>0)
             {
-                System.out.print("The single digit number is: "+(n == 0 ? 0 : (n % 9 == 0 ? 9 : n % 9)));
+                System.out.print("The single digit number is: "+ (n % 9 == 0 ? 9 : n % 9));
             }
             System.out.println("\n");
         }
